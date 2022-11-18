@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+</head>
+
+<body>
+    <img id="banner" src="{% static 'img/home.jpg' %}" alt="">
+    <div id="menu">
+       <ul>
+         <li><a href="/">Home</a></li>
+         <li><a href="/about">About</a></li>
+         <li><a href="/buku">Buku</a></li>
+       </ul> 
+    </div>
+
+    <!-- CONTAINER BOOTSTRAP -->
+    <div class="container">
+      <br>
+      <div class="jumbotron">
+          <h1 class="display-4">Selamat Datang di Era Industri 4.0</h1>
+          <p class="lead"> Topik Revulisi Industri 4.0 yaitu:</p>
+          <hr class="my-4">
+          <p> Internet of Things, saat komputer dan smartphon tersambung ke interner</p>
+          <hr class="my-4">
+          <p> Cloud Computing, Proses data sampai bermain game tidak perlu menggunakan device yang canggih, cukupt
+              terhubung deengan internet. Data diproses pada komputer server yang menyediakan seciver tersebut</p>
+          <hr class="my-4">
+          <p> Machine Learning, yaitu mesin yang memiliki kemampuan untuk belajar, hingga melakukan </p>
+          <a class="btn btn-primatu btn-lg" href="#" role="button">Topik Layananya</a>
+
+      </div>
+  </div>
+  <!-- END CONTAINER BOOTSTRAP -->
+
+
+    <scripts src="{% static 'vendor/bootstrap/bootstrap.js' %}" type="text/javascripts"></scripts>
+    <scripts src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js' %}" type="text/javascripts"></scripts>
+    <scripts src="{% static 'vendor/bootstrap/popper.min.js' %}" type="text/javascripts"></scripts>
+
+</body>
+</html>
